@@ -1,12 +1,11 @@
-import HomeComponent from '@/components/home/HomeComponent';
-import { Metadata } from 'next';
 
-export default function Home() {
+import ContactComponent from '@/components/contact/contactComponent'
+import { Metadata } from 'next'
+
+export default function Contact() {
   return (
-    <main>
-      <HomeComponent />
-    </main>
-  );
+    <ContactComponent />
+  )
 }
 
 // Meta Information
@@ -19,7 +18,7 @@ export const metadata: Metadata = {
     title: 'Digital Marketing Agency | Sanshray Ventures',
     description:
       'Sanshray Ventures is a digital marketing agency delivering strategic branding, performance marketing, social media management, SEO, and content solutions to help businesses grow, engage audiences, and achieve measurable online success.',
-    url: 'https://sanshrayventures.in/',
+    url: 'https://sanshrayventures.in/contact',
     type: 'website',
     images: 'https://sanshrayventures.in/wp-content/uploads/2025/11/LogoMakr-918e4j.png',
   },

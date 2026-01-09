@@ -1,0 +1,91 @@
+
+.headerSection {
+  background-color: blue;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+
+  .menuContainer {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pageText {
+      font-size: 17px;
+      font-weight: 400;
+      color: white;
+      line-height: 24px;
+    }
+
+    .verticalLine {
+      font-size: 14px;
+      font-weight: 400;
+      color: white;
+    }
+  }
+
+  .footerDesc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    margin: 2rem 0;
+  }
+
+  .copyrightText {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+  }
+}
+
+.campaignFooter{
+    .copyRightTxt{
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    .navigateLink{
+        a{
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 28px;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+  .footerSection {
+    padding-top: 2.5rem;
+    padding-bottom: 0;
+
+    .menuContainer {
+      flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .footerDesc {
+      margin: 1rem 0;
+    }
+
+    .copyrightText {
+      margin-left: 0;
+    }
+  }
+
+   .campaignFooter{
+        .copyRightTxt{
+            font-size: 18px !important;
+        }
+        .navigateLink{
+            a{
+                font-size: 16px !important;
+            }
+        }
+    }
+}
