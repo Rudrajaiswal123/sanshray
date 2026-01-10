@@ -1,91 +1,89 @@
-
 .headerSection {
-  background-color: blue;
-  text-align: center;
-  padding-top: 2.5rem;
-  padding-bottom: 1rem;
+  background-color: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+  .logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+  }
 
   .menuContainer {
-    margin: auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    gap: 30px;
 
     .pageText {
-      font-size: 17px;
-      font-weight: 400;
-      color: white;
-      line-height: 24px;
-    }
+      font-size: 18px;
+      font-weight: 500;
+      color: #333;
+      text-decoration: none;
+      position: relative;
 
-    .verticalLine {
-      font-size: 14px;
-      font-weight: 400;
-      color: white;
+      &:hover {
+        color: #0d6efd;
+      }
+      &.active {
+        color: #0d6efd;
+        font-weight: 600;
+      }
+       &.active::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #0d6efd;
+      }
     }
   }
 
-  .footerDesc {
-    font-size: 1rem;
-    font-weight: 400;
-    color: white;
-    margin: 2rem 0;
-  }
-
-  .copyrightText {
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
+  .headerBtn {
+    padding: 8px 20px;
+    font-size: 15px;
+    font-weight: 500;
   }
 }
-
-.campaignFooter{
-    .copyRightTxt{
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 28px;
-    }
-    .navigateLink{
-        a{
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 28px;
-            color: #fff;
-        }
-    }
+.mobileMenu {
+  display: none;
 }
 
-@media (max-width: 768px) {
-  .footerSection {
-    padding-top: 2.5rem;
-    padding-bottom: 0;
+@media (max-width: 767.98px) {
+  .mobileMenu {
+    display: block;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transform: translateY(-100%);
+    transition: transform 0.35s ease;
+    z-index: 999;
 
-    .menuContainer {
-      flex-wrap: wrap;
-        gap: 1rem;
-        align-items: center;
-        justify-content: center;
+    &.open {
+      transform: translateY(0);
     }
 
-    
+    nav {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
 
-    .footerDesc {
-      margin: 1rem 0;
-    }
+      a {
+        padding: 12px 0;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        text-decoration: none;
+        border-bottom: 1px solid #eee;
 
-    .copyrightText {
-      margin-left: 0;
+        &.active {
+          color: #0d6efd;
+          font-weight: 600;
+        }
+      }
     }
   }
-
-   .campaignFooter{
-        .copyRightTxt{
-            font-size: 18px !important;
-        }
-        .navigateLink{
-            a{
-                font-size: 16px !important;
-            }
-        }
-    }
 }

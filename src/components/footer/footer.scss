@@ -1,91 +1,106 @@
-
 .footerSection {
-  background-color: gray;
-  text-align: center;
-  padding-top: 2.5rem;
-  padding-bottom: 1rem;
+  background: #f9fafb;
+  padding: 60px 0 20px;
+  font-size: 15px;
+  color: #555;
 
-  .menuContainer {
-    margin: auto;
+  .footerBrand {
+    margin-bottom: 20px;
+  }
+
+  .footerText {
+    line-height: 1.7;
+    margin-bottom: 25px;
+    max-width: 420px;
+  }
+
+  .footerTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #0b1b4d;
+  }
+
+  a {
+    color: #555;
+  text-decoration: none;
+
+    &:hover {
+      color: #0d6efd;
+  text-decoration: none;
+    }
+  }
+
+  .socialIcons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  a {
+    width: 38px;
+    height: 38px;
+    background: #0d6efd;
+    border-radius: 50%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: blue;
+      transform: translateY(-2px);
+
+      img {
+        filter: brightness(0) invert(1);
+      }
+    }
+  }
+}
+
+  .footerMenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .footerBottom {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    gap: 15px;
 
-    .pageText {
-      font-size: 17px;
-      font-weight: 400;
-      color: white;
-      line-height: 24px;
-    }
-
-    .verticalLine {
+    p {
+      margin: 0;
       font-size: 14px;
-      font-weight: 400;
-      color: white;
     }
-  }
 
-  .footerDesc {
-    font-size: 1rem;
-    font-weight: 400;
-    color: white;
-    margin: 2rem 0;
-  }
+    .bottomLinks {
+      display: flex;
+      gap: 20px;
 
-  .copyrightText {
-    font-size: 16px;
-    font-weight: 400;
-    color: white;
+      a {
+        font-size: 14px;
+        color: #666;
+      }
+    }
   }
 }
 
-.campaignFooter{
-    .copyRightTxt{
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 28px;
-    }
-    .navigateLink{
-        a{
-            font-size: 22px;
-            font-weight: 400;
-            line-height: 28px;
-            color: #fff;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-  .footerSection {
-    padding-top: 2.5rem;
-    padding-bottom: 0;
-
-    .menuContainer {
-      flex-wrap: wrap;
-        gap: 1rem;
-        align-items: center;
-        justify-content: center;
-    }
-
-    
-
-    .footerDesc {
-      margin: 1rem 0;
-    }
-
-    .copyrightText {
-      margin-left: 0;
-    }
+/* Mobile */
+@media (max-width: 767px) {
+  .footerBottom {
+    flex-direction: column;
+    text-align: center;
   }
-
-   .campaignFooter{
-        .copyRightTxt{
-            font-size: 18px !important;
-        }
-        .navigateLink{
-            a{
-                font-size: 16px !important;
-            }
-        }
-    }
+  .socialIcons {
+    justify-content: center;
+  }
 }
