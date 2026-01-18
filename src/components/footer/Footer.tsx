@@ -9,6 +9,17 @@ export default function Footer() {
   return (
     <footer className="footerSection">
       <div className="container">
+        <div className="row">
+        <div className="col-12 footerfirstRow d-flex align-items-center py-lg-4 py-3 ps-lg-5 mb-lg-5">
+          <div className="me-3"><Image
+      src="/assets/icons/flaticon.svg"
+      alt="Facebook"
+      width={30}
+      height={30}
+    /></div>
+          <h2 className="footerfirstRowTitle">CONTACT US</h2>
+        </div>
+        </div>
         <div className="row gy-4">
 
           {/* LEFT: Logo + About */}

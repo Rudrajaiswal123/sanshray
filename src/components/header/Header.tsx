@@ -25,9 +25,9 @@ export default function Header() {
             <Link href="/" className="logo">
               <Image
                 src="/assets/images/sanshraylogo.png"
-                alt="Company Logo"
-                width={140}
-                height={45}
+                alt="Company"
+                width={150}
+                height={55}
               />
             </Link>
           </div>

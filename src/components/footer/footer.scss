@@ -4,6 +4,18 @@
   font-size: 15px;
   color: #555;
 
+  .footerfirstRow{
+  background: #1e6bff;
+  border-radius: 10px;
+    .footerfirstRowTitle{
+      font-size: 2rem;
+    font-weight: 600;
+     color: #ffffff; 
+    letter-spacing: 1px;
+    }
+  }
+
+
   .footerBrand {
     margin-bottom: 20px;
   }
@@ -15,7 +27,7 @@
   }
 
   .footerTitle {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #0b1b4d;
