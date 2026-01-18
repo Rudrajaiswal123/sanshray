@@ -31,7 +31,7 @@ export default function Testimonial() {
         {testimonials.map((item, index) => (
           <div key={index} className="cardWrapper">
             <div className="card">
-              <p className="message">"{item.message}"</p>
+              <p className="message">{item.message}</p>
               <h4 className="name">{item.name}</h4>
               <span className="location">{item.location.toUpperCase()}</span>
               <Image

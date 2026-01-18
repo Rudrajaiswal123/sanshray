@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -10,18 +10,19 @@ export default function Footer() {
     <footer className="footerSection">
       <div className="container">
         <div className="row">
-        <div className="col-12 footerfirstRow d-flex align-items-center py-lg-4 py-3 ps-lg-5 mb-lg-5">
-          <div className="me-3"><Image
-      src="/assets/icons/flaticon.svg"
-      alt="Facebook"
-      width={30}
-      height={30}
-    /></div>
-          <h2 className="footerfirstRowTitle">CONTACT US</h2>
-        </div>
+          <div className="col-12 footerfirstRow d-flex align-items-center py-lg-4 py-3 ps-lg-5 mb-lg-5">
+            <div className="me-3">
+              <Image
+                src="/assets/icons/flaticon.svg"
+                alt="Facebook"
+                width={30}
+                height={30}
+              />
+            </div>
+            <h2 className="footerfirstRowTitle">CONTACT US</h2>
+          </div>
         </div>
         <div className="row gy-4">
-
           {/* LEFT: Logo + About */}
           <div className="col-lg-5 col-md-6 col-12">
             <div className="footerBrand">
@@ -29,74 +30,74 @@ export default function Footer() {
                 src="/assets/images/sanshraylogo.png"
                 alt="Sanshray Ventures"
                 width={180}
-                height={55}
+                height={80}
               />
             </div>
 
             <p className="footerText">
-              Sanshray Ventures is a digital marketing agency delivering strategic
-              branding, performance marketing, social media management, SEO, and
-              content solutions to help businesses grow and achieve measurable
-              online success.
+              Sanshray Ventures is a digital marketing agency delivering
+              strategic branding, performance marketing, social media
+              management, SEO, and content solutions to help businesses grow and
+              achieve measurable online success.
             </p>
 
             <div className="socialIcons">
-  <Link
-    href="https://www.facebook.com/gloify2"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Facebook"
-  >
-    <Image
-      src="/assets/icons/facebook.svg"
-      alt="Facebook"
-      width={20}
-      height={20}
-    />
-  </Link>
+              <Link
+                href="https://www.facebook.com/gloify2"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+              >
+                <Image
+                  src="/assets/icons/facebook.svg"
+                  alt="Facebook"
+                  width={20}
+                  height={20}
+                />
+              </Link>
 
-  <Link
-    href="https://twitter.com/gloify2"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Twitter"
-  >
-    <Image
-      src="/assets/icons/twitter.svg"
-      alt="Twitter"
-      width={20}
-      height={20}
-    />
-  </Link>
+              <Link
+                href="https://twitter.com/gloify2"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter"
+              >
+                <Image
+                  src="/assets/icons/twitter.svg"
+                  alt="Twitter"
+                  width={20}
+                  height={20}
+                />
+              </Link>
 
-  <Link
-    href="https://www.linkedin.com/company/gloify/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-  >
-    <Image
-      src="/assets/icons/linkedin.svg"
-      alt="LinkedIn"
-      width={20}
-      height={20}
-    />
-  </Link>
+              <Link
+                href="https://www.linkedin.com/company/gloify/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <Image
+                  src="/assets/icons/linkedin.svg"
+                  alt="LinkedIn"
+                  width={20}
+                  height={20}
+                />
+              </Link>
 
-  <Link
-    href="https://www.instagram.com/gloify_official/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Instagram"
-  >
-    <Image
-      src="/assets/icons/instagram.svg"
-      alt="Instagram"
-      width={20}
-      height={20}
-    />
-  </Link>
-</div>
+              <Link
+                href="https://www.instagram.com/gloify_official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+              >
+                <Image
+                  src="/assets/icons/instagram.svg"
+                  alt="Instagram"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            </div>
           </div>
 
           {/* MIDDLE: Contact */}
@@ -116,8 +117,10 @@ export default function Footer() {
             </p>
 
             <p>
-              <strong>Location:</strong><br />
-              9th Main Rd, Sector 6, HSR Layout,<br />
+              <strong>Location:</strong>
+              <br />
+              9th Main Rd, Sector 6, HSR Layout,
+              <br />
               Bengaluru, Karnataka 560102
             </p>
           </div>
@@ -127,15 +130,26 @@ export default function Footer() {
             <h5 className="footerTitle">Menu</h5>
 
             <ul className="footerMenu">
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/about">About</Link></li>
-              <li><Link href="/services">Services</Link></li>
-              <li><Link href="/blog">Blog</Link></li>
-              <li><Link href="/privacy-policy">Privacy & Policy</Link></li>
-              <li><Link href="/terms-condition">Terms & Conditions</Link></li>
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li>
+                <Link href="/about">About</Link>
+              </li>
+              <li>
+                <Link href="/services">Services</Link>
+              </li>
+              <li>
+                <Link href="/blog">Blog</Link>
+              </li>
+              <li>
+                <Link href="/privacy-policy">Privacy & Policy</Link>
+              </li>
+              <li>
+                <Link href="/terms-condition">Terms & Conditions</Link>
+              </li>
             </ul>
           </div>
-
         </div>
 
         {/* Bottom Bar */}

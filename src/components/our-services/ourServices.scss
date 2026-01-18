@@ -1,0 +1,127 @@
+/* ===============================
+   Our Services Section
+   =============================== */
+
+.ourServicesSection {
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+
+/* Heading */
+.osTitle {
+  font-size: 20px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  color: #1e6bff;
+  margin-bottom: 12px;
+}
+
+.osSubTitle {
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #22343d;
+  margin-bottom: 70px;
+}
+
+/* Grid spacing */
+.osGrid {
+  row-gap: 60px;
+}
+
+/* Service Card */
+.osCard {
+  text-align: center;
+  padding: 40px 24px;
+  border: 1px solid #e6ecf5;
+  border-radius: 16px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+
+/* Icon wrapper */
+.osIconWrapper {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Soft oval background behind icon */
+.osIconWrapper::before {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 2px solid #dbe7ff;
+  z-index: 0;
+}
+
+/* Icon */
+.osIconWrapper img {
+  position: relative;
+  z-index: 1;
+}
+
+/* Card Title */
+.osCardTitle {
+  font-size: 22px;
+  font-weight: 600;
+  color: #22343d;
+  margin-bottom: 14px;
+}
+
+/* Description */
+.osCardDesc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #6b7280;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* Hover effect */
+.osCard:hover .osIconWrapper::before {
+  border-color: #1e6bff;
+}
+
+.osCard:hover {
+   border-color: #1e6bff;
+  box-shadow: 0 10px 30px rgba(30, 107, 255, 0.08);
+  transform: translateY(-6px);
+}
+
+/* ===============================
+   Responsive
+   =============================== */
+
+@media (max-width: 992px) {
+  .osSubTitle {
+    font-size: 34px;
+    margin-bottom: 50px;
+  }
+
+  .osIconWrapper {
+    width: 150px;
+    height: 150px;
+  }
+
+  .osIconWrapper::before {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ourServicesSection {
+    padding: 70px 0;
+  }
+
+  .osSubTitle {
+    font-size: 28px;
+  }
+}
