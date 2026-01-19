@@ -12,12 +12,12 @@
   font-size: 20px;
   letter-spacing: 1px;
   font-weight: 700;
-  color: #1e6bff;
+  color: #16bdc4;
   margin-bottom: 12px;
 }
 
 .osSubTitle {
-  font-size: 42px;
+  font-size: 52px;
   font-weight: 600;
   line-height: 1.25;
   color: #22343d;
@@ -86,11 +86,11 @@
 
 /* Hover effect */
 .osCard:hover .osIconWrapper::before {
-  border-color: #1e6bff;
+  border-color: #16bdc4;
 }
 
 .osCard:hover {
-   border-color: #1e6bff;
+   border-color: #16bdc4;
   box-shadow: 0 10px 30px rgba(30, 107, 255, 0.08);
   transform: translateY(-6px);
 }

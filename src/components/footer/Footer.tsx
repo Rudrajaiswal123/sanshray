@@ -27,7 +27,7 @@ export default function Footer() {
           <div className="col-lg-5 col-md-6 col-12">
             <div className="footerBrand">
               <Image
-                src="/assets/images/sanshraylogo.png"
+                src="/assets/images/sanshraylogo.webp"
                 alt="Sanshray Ventures"
                 width={180}
                 height={80}

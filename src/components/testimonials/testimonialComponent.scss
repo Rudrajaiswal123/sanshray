@@ -29,7 +29,7 @@
 }
 
 .card:hover {
-  border-color: #1e6bff;
+  border-color: #16bdc4;
 }
 
 /* Text */
@@ -45,7 +45,7 @@
 .name {
   font-size: 20px;
   font-weight: 600;
-  color: #1e6bff;
+  color: #16bdc4;
   margin-bottom: 6px;
   position: relative;
   z-index: 2;
@@ -103,7 +103,7 @@
 }
 
 .slick-dots li.slick-active button:before {
-  color: #1e6bff;
+  color: #16bdc4;
 }
 
 /* ===============================
@@ -114,14 +114,14 @@
 .slick-next {
   width: 46px;
   height: 46px;
-  background: #1e6bff !important;
+  background: #16bdc4 !important;
   border-radius: 50%;
   z-index: 10;
 }
 
 .slick-prev:hover,
 .slick-next:hover {
-  background: #174fd6 !important;
+  background: #16bdc4 !important;
 }
 
 .slick-prev::before,

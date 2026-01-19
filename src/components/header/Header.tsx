@@ -24,7 +24,7 @@ export default function Header() {
           <div className="col-lg-4 col-md-3 col-6">
             <Link href="/" className="logo">
               <Image
-                src="/assets/images/sanshraylogo.png"
+                src="/assets/images/sanshraylogo.webp"
                 alt="Company"
                 width={150}
                 height={55}
