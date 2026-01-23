@@ -8,6 +8,7 @@ import Image from "next/image";
 import Testimonial from "../testimonials/Testimonial";
 import HeroSlider from "../hero-slider/heroSlider";
 import OurServices from "../our-services/ourServices";
+import GetInTouch from "../get-in-touch/GetInTouch";
 
 export default function HomeComponent() {
   return (
@@ -120,6 +121,7 @@ export default function HomeComponent() {
           </div>
         </div>
       </div>
+      <GetInTouch />
     </>
   );
 }
